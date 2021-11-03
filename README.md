@@ -5,7 +5,7 @@ Compare two kernel configs, printing only different configs
 <summary>Example, click to expand !</summary>
 
 ```
-$ ./compareconfigs collie_defconfig corgi_defconfig 
+$ ./diffconfigs collie_defconfig corgi_defconfig 
                                                      : CONFIG_ARCH_PXA=y
 CONFIG_ARCH_SA1100=y                                 :
                                                      : CONFIG_BACKLIGHT_CLASS_DEVICE=y
@@ -230,10 +230,10 @@ CONFIG_SWAP is not set                               :
 
 ## Build
 ```
-g++ compareconfigs.cpp -o compareconfigs
+g++ diffconfigs.cpp -o diffconfigs
 ```
 ## Run
 ```
-./compareconfigs CONFIG_A CONFIG_B
+./diffconfigs CONFIG_A CONFIG_B
 ```
 
